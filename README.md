@@ -13,7 +13,7 @@ docker image ls
 
 docker run -it backpropagation_algo python app.py --name "backprop"
 
-### Run my newly built container
+### Create a docker repo on Dockhub
 
 Create a docker repo called reinhardtxie/backpropagation_algorithm on the Docker Hub
 
@@ -25,7 +25,7 @@ docker tag backpropagation-algo reinhardtxie/backpropagation_algorithm
 
 docker push reinhardtxie/backpropagation_algorithm
 
-### Run it on your terminal
+### Run it on Cloud or your own terminal
 
 docker pull reinhardtxie/backpropagation_algorithm:latest
 docker run -it reinhardtxie/backpropagation_algorithm:latest bash 
