@@ -23,8 +23,8 @@ docker push noahgift/duke102:tagname
 ## Run it yourself
 
 ```bash
-docker pull reinhardtxie/cloudapp:latest
-docker run -it reinhardtxie/cloudapp bash 
+docker pull noahgift/cloudapp:latest
+docker run -it noahgift/cloudapp bash 
 
 #then run python app.py --help
 ```
@@ -32,7 +32,7 @@ docker run -it reinhardtxie/cloudapp bash
 ## Pass in a command
 
 ```bash
-docker run -it reinhardtxie/cloudapp python app.py --name "Big John"
+docker run -it noahgift/cloudapp python app.py --name "Big John"
 #the output
 Hello Big John!
 ```
