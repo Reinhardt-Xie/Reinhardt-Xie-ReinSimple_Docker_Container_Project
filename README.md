@@ -1,8 +1,6 @@
-# Simple_Docker_Container_Project
+## Simple_Docker_Container_Project
 
-This is building a container for backpropagation algorithm with respect to Deep Neural Network.
-
-## Build the Container Yourself and Push to Docker Hub
+This is building a container for the backpropagation algorithm with respect to Deep Neural Network.
 
 ### Build image
 
@@ -15,23 +13,23 @@ docker image ls
 
 docker run -it backpropagation_algo python app.py --name "backprop"
 
+### Run my newly built container
+
+Create a docker repo called reinhardtxie/backpropagation_algorithm on the Docker Hub
+
+### Change local image name
+
+docker tag backpropagation-algo reinhardtxie/backpropagation_algorithm
+
 ### Push to Docker Hub
 
 docker push reinhardtxie/backpropagation_algorithm
 
-## Run it yourself
+### Run it on your terminal
 
-```bash
 docker pull reinhardtxie/backpropagation_algorithm:latest
 docker run -it reinhardtxie/backpropagation_algorithm:latest bash 
 
-#then run python app.py --help
-```
 
-## Pass in a command
-
-```bash
-docker run -it reinhardtxie/backpropagation_algorithm:latest python app.py 
-```
 
 
